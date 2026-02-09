@@ -21,108 +21,64 @@ Product Analyst case study analyzing Wise's MXN→USD route launch performance.
 ## 📁 Repository Structure
 ```
 ├── analysis/
-│   └── wise_case_study.ipynb    # Full exploratory analysis
+│   ├── break_down_analysis.md       # Detailed analysis & methodology
+│   └── wise_case_study.ipynb        # Exploratory notebook
 │
 ├── presentation/
-│   └── Wise_MXN_USD_Analysis_Final.pptx    # Executive slides
+│   └── Wise_MXN_USD_Analysis_Final.pptx
 │
-└── README.md    # This file
+└── README.md                         # This file
 ```
 
 ---
 
-## 🔍 Key Insights
+## 🚀 Quick Start
 
-### 1. Primary Driver Identified
-User Experience (New vs Existing) shows 2-3x more variance than Region or Platform:
-- **User Experience gap:** 19.6pp
-- Region variance: 10.4pp  
-- Platform variance: 9.0pp
-
-### 2. Root Cause: Payment Step
-Funnel breakdown reveals bottleneck at Created→Funded:
-- New users: 34.9% payment success
-- Existing users: 60.9% payment success
-- **26pp gap** (2x larger than payout step)
-
-### 3. Validated Across Regions
-Cross-analysis confirms pattern is consistent:
-- LatAm: 33pp gap (New vs Existing)
-- NorthAm: 29pp gap
-- Other: 29pp gap
-
-Not a regional issue - it's a systemic New user experience problem.
-
-### 4. February Performance Decline
-Both segments declined in February:
-- New users: 19.0% → 17.3% (-1.7pp)
-- Existing users: 40.9% → 38.3% (-2.6pp)
-
-Not just mix effect - suggests product or market change requiring investigation.
+**Want the full story?**
+1. **[Read Full Analysis](analysis/break_down_analysis.md)** - Complete methodology, hypothesis testing, and insights
+2. **[View Notebook](analysis/wise_case_study.ipynb)** - Exploratory analysis with code
+3. **[Download Slides](presentation/Wise_MXN_USD_Analysis_Final.pptx)** - Executive presentation
 
 ---
 
-## 💡 Recommendations
+## 💡 Key Insights (TL;DR)
 
-### Priority 1: Optimize New User Payment Experience
-**Problem:** 26pp gap at payment step
+### 1. Primary Driver Identified
+User Experience (New vs Existing) shows 2-3x more variance than Region or Platform.
 
-**Actions:**
-- Investigate friction points (session replays, user interviews)
-- Test solutions: simplified UX, trust signals, local payment methods
-- Target 50% gap closure = +15.9% volume
+### 2. Root Cause: Payment Step
+New users stuck at 34.9% payment success vs 60.9% for Existing (26pp gap).
 
-**Timeline:** 3-6 months
+### 3. Validated Across Regions
+Pattern consistent everywhere - not a regional issue, it's systemic.
 
-### Priority 2: Investigate February Decline
-**Finding:** Both New (-1.7pp) and Existing (-2.6pp) segments declined
-
-**Actions:**
-- Review late Jan/early Feb product deployments
-- Analyze seasonal patterns in comparable routes
-- Check for external market factors
+### 4. Clear Impact Path
+50% gap closure = +1,678 transfers (+15.9% volume). Realistic with product improvements.
 
 ---
 
 ## 🛠️ Methodology
 
-**Approach:**
-- Hypothesis-driven exploration (tested Region, Platform, User Experience)
-- Root cause analysis via funnel step breakdown
-- Cross-validation (Region × Experience) to rule out confounding factors
-- Impact quantification through payment-focused scenarios
+- **Approach:** Hypothesis-driven exploration (tested Region, Platform, User Experience)
+- **Root Cause:** Funnel step breakdown to identify bottleneck
+- **Validation:** Cross-analysis to rule out confounding factors
+- **Impact:** Payment-focused scenarios quantifying improvement potential
 
-**Tools:**
-- Python (pandas, numpy, matplotlib)
-- Jupyter Notebook for exploratory analysis
-- PowerPoint for executive communication
-
-**Data Limitations:**
-- No access to internal Wise benchmarks (BRL→USD, CLP→USD performance)
-- Demand estimation based on external market data + methodology framework
-- Targets defined through gap closure % (defensible without internal benchmarks)
+**Tools:** Python (pandas, numpy, matplotlib), Jupyter Notebook
 
 ---
 
-## 📊 Business Impact Scenarios
+## 📊 Recommendations
 
-Assumption: Improve Created→Funded for New users only (payout step constant)
+**Priority 1:** Optimize New user payment experience (26pp gap)
+- Investigate friction points (session replays, user interviews)
+- Test solutions: simplified UX, trust signals, local payment methods
+- Timeline: 3-6 months
 
-| Scenario | Payment Rate | Overall Conv. | Additional Transfers | Impact |
-|----------|--------------|---------------|---------------------|---------|
-| Conservative (30%) | 42.9% | 21.9% | +1,007 | +9.5% |
-| **Base Case (50%)** | **48.3%** | **24.6%** | **+1,678** | **+15.9%** |
-| Optimistic (70%) | 53.6% | 27.4% | +2,350 | +22.3% |
-| Best Case (100%) | 61.6% | 31.4% | +3,357 | +31.8% |
-
-Base Case: Realistic with dedicated product improvements (simplified flow + trust signals + guided onboarding).
+**Priority 2:** Investigate February performance decline
+- Both New (-1.7pp) and Existing (-2.6pp) segments declined
+- Review late Jan/early Feb deployments and seasonal patterns
 
 ---
 
-## 📈 Quick Start
-
-1. **[View Analysis Notebook](analysis/wise_case_study.ipynb)** - Full exploratory analysis with code
-2. **[Download Presentation](presentation/Wise_MXN_USD_Analysis_Final.pptx)** - Executive summary slides
-
----
-
+*Case study completed February 2026*
