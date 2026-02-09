@@ -18,20 +18,6 @@ Product Analyst case study analyzing Wise's MXN→USD route launch performance.
 
 ---
 
-## 📁 Repository Structure
-```
-├── analysis/
-│   ├── break_down_analysis.md       # Detailed analysis & methodology
-│   └── wise_case_study.ipynb        # Exploratory notebook
-│
-├── presentation/
-│   └── Wise_MXN_USD_Analysis_Final.pptx
-│
-└── README.md                         # This file
-```
-
----
-
 ## 🚀 Quick Start
 
 **Want the full story?**
