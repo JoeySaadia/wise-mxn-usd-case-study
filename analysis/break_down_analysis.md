@@ -103,7 +103,7 @@ These metrics directly cause the North Star (TPV). If these perform well, volume
 
 ![Weekly Conversion Rate Trend](weekly_conversion_trend_.png)
 
-**Observation:** Conversion peaked at 27.7% (mid-Jan), dropped to 24.6% (early Feb), and stabilized around 25.4-25.5% thereafter. The decline coincides with payment step friction increasing (Created→Funded dropped from ~50% to ~42% in the same period).
+**Observation:** Both New and Existing users declined in February. New users dropped from 19.0% to 17.3% (-1.7pp), while Existing users dropped from 40.9% to 38.3% (-2.6pp). Not just mix effect - suggests systemic issue affecting all user types.
 
 ---
 
