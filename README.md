@@ -129,8 +129,6 @@ Base Case: Realistic with dedicated product improvements (simplified flow + trus
 ## 📧 Contact
 
 Joseph Cozer Saadia  
-[LinkedIn](https://www.linkedin.com/in/your-profile) | [Email](mailto:your.email@example.com)
-
+jcsaadia@gmail.com
 ---
 
-*Case study completed February 2026*
