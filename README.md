@@ -126,9 +126,3 @@ Base Case: Realistic with dedicated product improvements (simplified flow + trus
 
 ---
 
-## 📧 Contact
-
-Joseph Cozer Saadia  
-jcsaadia@gmail.com
----
-
